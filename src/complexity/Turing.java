@@ -180,11 +180,7 @@ public class Turing {
         }
 
         for (String newState : go.keySet()) {
-            System.out.println("go:" + go);
-            System.out.println("go keyset:" + go.keySet());
-
             List<String> configurations = go.get(newState);
-            System.out.println("configurations:" + configurations);
 
             // Dynamically build configuration for multiple or single tape
             StringBuilder configBuilder = new StringBuilder();
@@ -209,7 +205,6 @@ public class Turing {
             configBuilder.append(")");
 
             String formattedConfig = configBuilder.toString(); // Exclude newState here
-            System.out.println("Formatted newConfig: " + formattedConfig);
 
             processTransition(tapes, heads, newState, formattedConfig, output, yetExecuted);
         }
