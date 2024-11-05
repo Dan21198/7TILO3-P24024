@@ -8,7 +8,7 @@ import complexity.Utils;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        String fileName = "src//complexity//add";
+        String fileName = "src//complexity//homeWork03";
         Turing machine;
         List<Turing.Output> outputs;
 
@@ -22,9 +22,7 @@ public class Main {
                   System.out.println("Final Output is: " + specificOutput);
             }
 
-            //System.out.println("The turing machine has " + machine.getTapesNumber() + " tapes");
             System.out.println("Time Complexity: " + machine.getStepCount());
-            //System.out.println("Space Complexity: " + machine.getTotalWrittenCells());
         } catch(IOException | TuringException e) {
             System.out.println(e);
         }
