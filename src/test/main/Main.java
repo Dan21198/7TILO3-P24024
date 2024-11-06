@@ -8,7 +8,7 @@ import complexity.Utils;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        String fileName = "src//complexity//homeWork03";
+        String fileName = "src//complexity//homeWork03V2";
         Turing machine;
         List<Turing.Output> outputs;
 
